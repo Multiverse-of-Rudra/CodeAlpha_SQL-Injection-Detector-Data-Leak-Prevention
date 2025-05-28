@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure User Submission</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <h1>Submit Your Info Securely</h1>
+  {% if success %}<p class="success">Data stored securely!</p>{% endif %}
+  <form id="secureForm" method="POST">
+    <input name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <textarea name="info" placeholder="Sensitive Info" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Registered Users</h2>
+  <ul>
+    {% for u in users %}
+      <li>{{ u[1] }} ({{ u[2] }})</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
