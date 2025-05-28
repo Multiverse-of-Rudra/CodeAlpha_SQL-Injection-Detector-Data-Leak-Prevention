@@ -101,18 +101,15 @@ Database Storage: The encrypted data is saved to a secure MySQL database.
 
 📊 Viewing Stored Data
 In MySQL CLI:
-sql
-Copy
-Edit
+sql:
 USE securedb;
 SELECT * FROM users;
-Or Use a GUI Tool:
+
+Or
+Use a GUI Tool:
 MySQL Workbench
-
 phpMyAdmin
-
 DBeaver
-
 Note: The info field will appear encrypted.
 
 🧪 Testing
@@ -124,7 +121,7 @@ Encrypt valid data before storing
 
 
 🧑‍💻 Author
-Your Rudra Mohan Mishra
+Rudra Mohan Mishra
 Made as part of the CodeAlpha Internship Program
 GitHub: Multiverse-of-Rudra
 
